@@ -377,7 +377,6 @@ The entropy values calculated for different language models and test corpora ind
 
 ## Named Entity Recognition
 
-```markdown
 ### Summary of the Code
 
 The files `BinaryLogisticRegression.py`, and `NER.py` provide the implementation for the Named Entity Recognition (NER) problem using binary logistic regression. The NER model is trained on labeled data to distinguish between "name" entities and "noname" entities using features extracted from tokens. The model can be trained using three types of gradient descent approaches: stochastic, minibatch, and batch gradient descent. After training, the model can be tested on a separate dataset, and the results, including accuracy and confusion matrix, are displayed.
@@ -465,9 +464,14 @@ The files `BinaryLogisticRegression.py`, and `NER.py` provide the implementation
 
 14. **`BinaryLogisticRegression.main()`**:
     - A test function that applies the logistic regression model to a toy dataset.
-```
 
 ### Results
+
+**Minibatch Gradient Descent**
+
+Below is the plot of the training curves showing the gradient norm over iterations during the training process using Mini-batch Gradient Descent (MBGD). The curves illustrate how the gradient norm decreases as the model converges.
+
+![MGD training curve](NER/gradient_mgd.png)
 
 ```
 $ python NER.py -d data/ner_training.csv -t data/ner_test.csv -mgd
@@ -482,8 +486,14 @@ Model parameters:
                         0        1
 Predicted class:  0 83831.000 3242.000
                   1  879.000 12046.000
-				  
-=========================================================================
+```				  
+
+**Stochastic Gradient Descent**
+
+Below figure shows the training curve for Stochastic Gradient Descent shows rapid updates with significant fluctuations, reflecting the noisy learning process as the model makes frequent parameter adjustments based on individual data points.
+![Stochastic gradient curve](NER/gradient_stochastic.png)
+
+```
 Results with Stochastic Gradient Descent approach:
 
 python NER.py -d data/ner_training.csv -t data/ner_test.csv -s
@@ -505,12 +515,15 @@ Model parameters:
                         0        1
 Predicted class:  0 83680.000 3194.000
                   1 1030.000 12094.000
-Press Return to finish the program...
+```				  
 
-				  
-==============================================================================
+**Batch Gradient Descent**
+
+Below figures hows the training curve for Batch Gradient Descent demonstrates a smoother and more gradual convergence, as the model updates parameters using the entire dataset at each iteration, leading to slower but stable progress.
+![Batch gradient training curve](NER/batch_gradient.png)
+
+```
 Results with Batch Gradient Descent:
-
 python NER.py -d data/ner_training.csv -t data/ner_test.csv -b
 Iter: 1 , Sum of square of Gradient: 0.1314062194642822
 Iter: 10 , Sum of square of Gradient: 0.12607190888139588
