@@ -4,9 +4,7 @@
 
 This section explores the bigram langauge model.
 
-**bigram model** is a simple and efficient way to capture word-to-word dependencies, making it a foundational concept in statistical language processing.
-
-A **bigram model** is a type of statistical language model that predicts the probability of a word given the preceding word in a sequence. It is based on the **Markov assumption**, which simplifies language modeling by assuming that the probability of a word depends only on the previous word, rather than on the entire preceding sequence.
+A **bigram model** is a simple and efficient way to capture word-to-word dependencies, making it a foundational concept in statistical language processing. It is a type of statistical language model that predicts the probability of a word given the preceding word in a sequence. It is based on the **Markov assumption**, which simplifies language modeling by assuming that the probability of a word depends only on the previous word, rather than on the entire preceding sequence.
 
 ### **Key Concepts:**
 
@@ -43,7 +41,7 @@ In the sentence "the cat sat on the mat," the bigrams are:
 
 The bigram model calculates the probability of each word in the sentence given the previous word and uses these probabilities to model the sentence.
 
-As part of the project, we build a bigram language model from a given corpus. The file ```BigramTrainer.py``` reads the corpus, processes the tokens, and then calculates the unigram and bigram counts. The results are either printed or saved to a file.
+As part of the project, we build a bigram language model from a given corpus. The file [```BigramTrainer.py```](LanguageModels/BigramTrainer.py) reads the corpus, processes the tokens, and then calculates the unigram and bigram counts. The results are either printed or saved to a file.
 
 ### **Summary of Functions:**
 
@@ -153,7 +151,7 @@ $ python .\BigramTrainer.py -f .\data\kafka.txt -d .\kafka_model.txt
 
 ## Text Generation
 
-The file ```Generator.py``` contains the code to generate words from a bigram language model. It reads a pre-trained language model from a file and generates sequences of words by sampling from the bigram probabilities. The output is a sequence of words based on the specified starting word and the number of words to generate.
+The file [```Generator.py```](LanguageModels/Generator.py) contains the code to generate words from a bigram language model. It reads a pre-trained language model from a file and generates sequences of words by sampling from the bigram probabilities. The output is a sequence of words based on the specified starting word and the number of words to generate.
 
 ### **Summary of Functions:**
 
@@ -210,7 +208,7 @@ Unique word count: 172109, total word count: 8910277
 hope . this kind of failure of the nla member of bbc trust organic food to make them . related :
 ```
 
-As a next example, we create a new model from the corpus 'Pride and Prejudice' by Jane Austen, which is available in the file data\austen_training.txt
+As a next example, we create a new model from the corpus 'Pride and Prejudice' by Jane Austen, which is available in the file [```data\austen_training.txt```](LanguageModels/data/austen_training.txt)
 
 ```
 # Create the model
@@ -245,7 +243,7 @@ news corp columnist , especially to the outside - buy one of national economy wa
 
 ## Evaluating n-gram models
 
-The `BigramTester.py` defined a class that reads a bigram language model and evaluates the entropy of a test corpus. The entropy measures how well the language model predicts the test data. The script calculates the cumulative entropy by processing each word in the test corpus, comparing it against the probabilities from the bigram model.
+The [```BigramTester.py```](LanguageModels/BigramTester.py) defined a class that reads a bigram language model and evaluates the entropy of a test corpus. The entropy measures how well the language model predicts the test data. The script calculates the cumulative entropy by processing each word in the test corpus, comparing it against the probabilities from the bigram model.
 
 ### Function Summaries:
 
@@ -265,9 +263,9 @@ The `BigramTester.py` defined a class that reads a bigram language model and eva
    - Parses the command-line arguments, which specify the language model file and the test corpus file. It then creates a `BigramTester` instance, reads the model, and processes the test corpus to calculate the entropy. Finally, it prints the number of words read and the estimated entropy.
 
 ### Results 
-Testing the model built from a test corpus using a given test corpus.
-For instance, to test the model built from small.txt using kafka.txt as a test corpus:
+Here we demonstrate testing the model built from a test corpus using a given test corpus. 
 
+For instance, to test the model built from [```small.txt```](LanguageModels/data/small.txt) using Metamorphosis by Franz Kafka [```kafka.txt```](LanguageModels/data/kafka.txt) as a test corpus:
 ```
 $ python BigramTester.py -f small_model.txt -t data/kafka.txt
 file small_model.txt has been opened:
@@ -379,7 +377,7 @@ The entropy values calculated for different language models and test corpora ind
 
 ### Summary of the Code
 
-The files `BinaryLogisticRegression.py`, and `NER.py` provide the implementation for the Named Entity Recognition (NER) problem using binary logistic regression. The NER model is trained on labeled data to distinguish between "name" entities and "noname" entities using features extracted from tokens. The model can be trained using three types of gradient descent approaches: stochastic, minibatch, and batch gradient descent. After training, the model can be tested on a separate dataset, and the results, including accuracy and confusion matrix, are displayed.
+The files [```BinaryLogisticRegression.py```](NER/BinaryLogisticRegression.py), and [```NER.py```](NER/NER.py) provide the implementation for the Named Entity Recognition (NER) problem using binary logistic regression. The NER model is trained on labeled data to distinguish between "name" entities and "noname" entities using features extracted from tokens. The model can be trained using three types of gradient descent approaches: stochastic, minibatch, and batch gradient descent. After training, the model can be tested on a separate dataset, and the results, including accuracy and confusion matrix, are displayed.
 
 ### Summary of the Files
 
