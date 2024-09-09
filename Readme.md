@@ -2,7 +2,7 @@ This project consists of various assignments completed as part of the course DD2
 
 An outline of the project:
 
-## Assignment 2
+## [Assignment 2](Assignment_2)
 covers concepts from the topic `Statistical Language Models`
 1. Bigram Models
 2. Text Generation
