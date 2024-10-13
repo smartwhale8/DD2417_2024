@@ -16,7 +16,7 @@ covers concepts from the topic `Word Embeddings (Word vectors)`
 3. Word embeddings as features
 4. GloVe
 
-## Assignment 4
+## [Assignment 4](Assignment_4)
 covers concepts from the topic `Neural Networks`
 1. Named Entity Recognition with GRUs
 2. Translation using RNNs
