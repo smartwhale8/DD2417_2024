@@ -1,0 +1,94 @@
+Current device: NVIDIA H100 80GB HBM3 MIG 1g.10gb
+
+Number of source words:  8883
+Number of target words:  12861
+Number of training sentences:  33454
+
+21:40:13 Starting training.
+21:40:27 Epoch 0 loss: 21.238292694091797
+Evaluating on the dev data...
+Correctly predicted words    :  375
+Incorrectly predicted words  :  2279
+Correctly predicted sentences  :  0
+Incorrectly predicted sentences:  370
+
+21:41:01 Epoch 1 loss: 14.618926048278809
+21:41:16 Epoch 2 loss: 12.568405151367188
+21:41:30 Epoch 3 loss: 11.037249565124512
+21:41:45 Epoch 4 loss: 9.878971099853516
+21:41:59 Epoch 5 loss: 8.860466003417969
+21:42:13 Epoch 6 loss: 7.962972640991211
+21:42:27 Epoch 7 loss: 7.201194763183594
+21:42:42 Epoch 8 loss: 6.547282695770264
+21:42:56 Epoch 9 loss: 5.953672409057617
+21:43:10 Epoch 10 loss: 5.453971862792969
+Evaluating on the dev data...
+Correctly predicted words    :  1319
+Incorrectly predicted words  :  1335
+Correctly predicted sentences  :  45
+Incorrectly predicted sentences:  325
+
+21:43:44 Epoch 11 loss: 5.05647087097168
+21:43:58 Epoch 12 loss: 4.6846394538879395
+21:44:12 Epoch 13 loss: 4.344533920288086
+21:44:26 Epoch 14 loss: 4.023764610290527
+21:44:40 Epoch 15 loss: 3.754096031188965
+21:44:55 Epoch 16 loss: 3.5327444076538086
+21:45:09 Epoch 17 loss: 3.3565125465393066
+21:45:22 Epoch 18 loss: 3.196476697921753
+21:45:36 Epoch 19 loss: 3.055115222930908
+21:45:50 Epoch 20 loss: 2.88974928855896
+Evaluating on the dev data...
+Correctly predicted words    :  1435
+Incorrectly predicted words  :  1219
+Correctly predicted sentences  :  62
+Incorrectly predicted sentences:  308
+
+21:46:23 Epoch 21 loss: 2.7429885864257812
+21:46:37 Epoch 22 loss: 2.623936891555786
+21:46:51 Epoch 23 loss: 2.5291593074798584
+21:47:06 Epoch 24 loss: 2.442716360092163
+21:47:20 Epoch 25 loss: 2.356566905975342
+21:47:34 Epoch 26 loss: 2.2872376441955566
+21:47:48 Epoch 27 loss: 2.224519729614258
+21:48:02 Epoch 28 loss: 2.1580934524536133
+21:48:15 Epoch 29 loss: 2.0852952003479004
+21:48:29 Epoch 30 loss: 2.0079104900360107
+Evaluating on the dev data...
+Correctly predicted words    :  1464
+Incorrectly predicted words  :  1190
+Correctly predicted sentences  :  71
+Incorrectly predicted sentences:  299
+
+21:49:03 Epoch 31 loss: 1.935629963874817
+21:49:16 Epoch 32 loss: 1.87532377243042
+21:49:30 Epoch 33 loss: 1.8287973403930664
+21:49:43 Epoch 34 loss: 1.7905513048171997
+21:49:56 Epoch 35 loss: 1.7589489221572876
+21:50:09 Epoch 36 loss: 1.7354248762130737
+21:50:23 Epoch 37 loss: 1.717788815498352
+21:50:36 Epoch 38 loss: 1.6917340755462646
+21:50:49 Epoch 39 loss: 1.6320202350616455
+21:51:02 Epoch 40 loss: 1.5710417032241821
+Evaluating on the dev data...
+Correctly predicted words    :  1473
+Incorrectly predicted words  :  1181
+Correctly predicted sentences  :  75
+Incorrectly predicted sentences:  295
+
+21:51:35 Epoch 41 loss: 1.5227333307266235
+21:51:48 Epoch 42 loss: 1.4868342876434326
+21:52:01 Epoch 43 loss: 1.4587929248809814
+21:52:15 Epoch 44 loss: 1.4451628923416138
+21:52:28 Epoch 45 loss: 1.4381115436553955
+21:52:42 Epoch 46 loss: 1.4323797225952148
+21:52:55 Epoch 47 loss: 1.426858901977539
+21:53:08 Epoch 48 loss: 1.4013874530792236
+21:53:21 Epoch 49 loss: 1.3647408485412598
+Evaluating on the test data...
+Number of test sentences:  3346
+
+Correctly predicted words    :  12425
+Incorrectly predicted words  :  12832
+Correctly predicted sentences  :  550
+Incorrectly predicted sentences:  2796
